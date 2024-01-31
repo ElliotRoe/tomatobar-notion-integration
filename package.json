@@ -1,26 +1,22 @@
 {
-  "name": "nodejs-typescript-template",
+  "name": "tomatobar-notion-integration",
   "version": "1.263.0",
-  "description": "A template for a nodejs application, using typescript",
+  "description": "Track tomatobar data in Notion",
   "main": "dist/src/index.js",
   "author": "",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node ./src/app.ts",
+    "dev": "ts-node ./src/script.ts",
     "build": "tsc",
     "start": "node ./dist/app.js",
     "lint": "eslint --fix --quiet src/**/*.ts",
-    "format": "prettier --loglevel silent --write src/**/*.ts",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "format": "prettier --loglevel silent --write src/**/*.ts"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.14",
     "dotenv": "^16.4.1"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.11",
     "@types/node": "^20.11.10",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": "^6.19.1",
